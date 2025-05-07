@@ -39,3 +39,7 @@ train_data['Electrical'] = train_data['Electrical'].fillna(train_data['Electrica
 
 # Eksik verileri kontrol etmek için kolon bazlı eksik değer sayılarını yazdır
 print(train_data.isnull().sum().sort_values(ascending=False))
+print(train_data.isnull().sum().sort_values(ascending=False))
+
+train_data['FireplaceQu'] = train_data['FireplaceQu'].fillna('None')
+print(train_data.isnull().sum().sum())
